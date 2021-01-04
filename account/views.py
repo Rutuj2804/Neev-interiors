@@ -53,10 +53,9 @@ def contact(request):
         email = request.POST['Email']
         contact = request.POST['Contact']
         notes = request.POST['notes']
-        if(first_name>0 & last_name>0 & email>0 & contact>0 & notes>0 ):
-            contactData = Contact(first_name=first_name, last_name=last_name, email=email, contact=contact, notes=notes)
-            contactData.save()
-            return redirect('index')
+        contactData = Contact(first_name=first_name, last_name=last_name, email=email, contact=contact, notes=notes)
+        contactData.save()
+        return redirect('index')
     except:
         return render(request, 'index.html', {"msg": "Every Field Is Required !!!"})
     return render(request, 'single.html')
