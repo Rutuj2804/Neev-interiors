@@ -2069,7 +2069,7 @@ header{
 }
 
 .container_nav{
-  max-width: 100%;
+  max-width: 65rem;
   padding: 0 2rem;
   margin: 0 auto;
   display: flex;
@@ -2112,7 +2112,6 @@ header{
   display: inline-block;
   padding: .5rem 1.3rem;
   font-size: .8rem;
-  color: #000000;
   border: 2px solid #000;
   border-radius: 2rem;
   line-height: 1;
@@ -2122,8 +2121,8 @@ header{
 }
 
 .btn.solid, .btn.transparent:hover{
-  background-color: #fff;
-  color:#000;
+  background-color: transparent;
+  color:transparent;
 }
 
 .btn.transparent, .btn.solid:hover{
@@ -2147,7 +2146,7 @@ header{
   color: #000;
   padding: 0 .5rem;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: .95rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
