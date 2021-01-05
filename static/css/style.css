@@ -2067,6 +2067,14 @@ header{
   z-index: 1000;
 }
 
+.container_nav{
+  max-width: 65rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
 .logo-container{
   flex: 1;
   display: flex;
