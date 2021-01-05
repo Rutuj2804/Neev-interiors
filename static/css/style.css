@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5,
   .form-control:hover, .form-control:active, .form-control:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
-.site-section img
+.site-section img{
 margin-top:20px;
 }
 .site-section .container .row .lead{
@@ -253,7 +253,12 @@ margin-top:20px;
 .overlap-to-top {
   margin-top: -150px; }
 
-
+.site-logo img {
+  vertical-align: middle;
+  border-style: none;
+  width: auto;
+  height: 70px;
+}
 /*About section STARTS Here */
 
 /*About Me*/
