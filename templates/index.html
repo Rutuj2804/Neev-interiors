@@ -67,7 +67,7 @@
     <header>
       <div class="container_nav">
           <input type="checkbox" name="" id="check">
-          <a>
+          <a href="{% url 'index' %}">
           <div class="logo-container">
             <img class="logo" src="/Neev-interiors/static/images/logo.png">
           </div>
@@ -81,12 +81,12 @@
                       </li>
                       <li class="nav-link" style="--i: .85s">
                           <a href="#work-section">3D Designs</a></li>
-          <li class="nav-link" style="--i: .85s">
-                          <a href="/Neev-interiors/templates/single.html">Samples</a></li>
+                      <li class="nav-link" style="--i: .85s">
+                          <a href="{% url 'single' %}">Samples</a></li>
                       <li class="nav-link" style="--i: .85s">
                           <a href="#about-section">About</a></li>
                       <li class="nav-link" style="--i: 1.35s">
-                          <a href="/Neev-interiors/templates/blog-layout.html">Blogs</a>
+                          <a href="{% url 'blog-layout' %}">Blogs</a>
                       </li>
                       <li class="nav-link" style="--i: 1.35s">
                           <a href="#contact-section">Contact</a>
