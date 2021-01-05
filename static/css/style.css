@@ -2135,6 +2135,8 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #000;
+  border: solid 2px #000;
   flex: 1;
 }
 
@@ -2305,6 +2307,7 @@ header{
       line-height: 1;
       padding: 1.6rem 2rem;
       color:#000;
+      font: size 20px;
   }
 
   .nav-link:hover > a{
