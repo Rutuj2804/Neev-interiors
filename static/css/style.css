@@ -2111,7 +2111,7 @@ header{
   display: inline-block;
   padding: .5rem 1.3rem;
   font-size: .8rem;
-  border: 2px solid #fff;
+  border: 2px solid #000;
   border-radius: 2rem;
   line-height: 1;
   margin: 0 .2rem;
@@ -2120,8 +2120,8 @@ header{
 }
 
 .btn.solid, .btn.transparent:hover{
-  background-color: #fff;
-  color: #69bde7;
+  background-color: transparent;
+  color:transparent;
 }
 
 .btn.transparent, .btn.solid:hover{
