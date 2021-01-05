@@ -2085,6 +2085,7 @@ header{
     margin: 0 auto;
     display: flex;
     position: relative;
+    height: 100px;
 }
 
 .logo-container{
@@ -2130,6 +2131,12 @@ header{
     background-color: transparent;
     color: #fff;
 }
+.log-sign{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
 
 .nav-links > ul{
     display: flex;
@@ -2144,7 +2151,7 @@ header{
 
 .nav-link > a{
     line-height: 3rem;
-    color: #fff;
+    color: #000;
     padding: 0 .5rem;
     letter-spacing: 1px;
     font-size: .95rem;
@@ -2244,61 +2251,71 @@ header{
 }
 
 @media (max-width: 920px){
-    .hamburger-menu-container{
-        display: flex;
-    }
+  .hamburger-menu-container{
+      display: flex;
+  }
 
-    #check{
-        display: block;
-    }
+  #check{
+      display: block;
+  }
 
-    .nav-btn{
-        position: fixed;
-        height: calc(100vh - 3rem);
-        top: 3rem;
-        left: 0;
-        width: 100%;
-        background-color:transparent;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        overflow-x: hidden;
-        overflow-y: auto;
-        transform: translateX(100%);
-        transition: .65s;
-    }
+  .nav-btn{
+      position: fixed;
+      height: calc(100vh - 3rem);
+      top: 3rem;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      overflow-x: hidden;
+      overflow-y: auto;
+      transform: translateX(100%);
+      transition: .65s;
+  }
 
-    #check:checked ~ .nav-btn{
-        transform: translateX(0);
-    }
+  #check:checked ~ .nav-btn{
+      transform: translateX(0);
+  }
 
-    #check:checked ~ .nav-btn .nav-link,
-    #check:checked ~ .nav-btn .log-sign{
-        animation: animation .5s ease forwards var(--i);
-    }
+  #check:checked ~ .nav-btn .nav-link,
+  #check:checked ~ .nav-btn .log-sign{
+      animation: animation .5s ease forwards var(--i);
+  }
 
-    .nav-links{
-        flex: initial;
-        width: 100%;
-    }
+  .nav-links{
+      flex: initial;
+      width: 100%;
+  }
 
-    .nav-links > ul{
-        flex-direction: column;
-    }
+  .nav-links > ul{
+      flex-direction: column;
+  }
 
-    .nav-link{
-        width: 100%;
-        opacity: 0;
-        transform: translateY(15px);
-    }
+  .nav-link{
+      width: 100%;
+      opacity: 0;
+      transform: translateY(15px);
+  }
 
-    .nav-link > a{
-        line-height: 1;
-        padding: 1.6rem 2rem;
-    }
+  .nav-link > a{
+      line-height: 1;
+      padding: 1.6rem 2rem;
+      color:#000;
+  }
 
-    .nav-link:hover > a{
-        transform: scale(1);
-        background-color: #fff;
-    }
+  .nav-link:hover > a{
+      transform: scale(1);
+      background-color: #edf0f5;
+  }
+  .log-sign{
+    flex: initial;
+    width: 50%;
+    padding-right: 500px;
+    padding: 1.5rem 1.9rem;
+    justify-content: flex-start;
+    opacity: 0;
+    transform: translateY(15px);
+}
 }
