@@ -2253,10 +2253,12 @@ header{
 @media (max-width: 920px){
   .hamburger-menu-container{
       display: flex;
+      color: #000;
   }
 
   #check{
       display: block;
+      color: #000000;
   }
 
   .nav-btn{
