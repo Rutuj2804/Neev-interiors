@@ -11,7 +11,7 @@ class Designs3D(models.Model):
 
 class Blog(models.Model):
     title = models.CharField(max_length=600)
-    category = models.ForeignKey(Categorie, on_delete=models.CASCADE)
+    category = models.ForeignKey(Designs3D, on_delete=models.CASCADE)
     content = models.TextField()
     image_one = models.ImageField(upload_to='blog/', null=True, blank=True)
     image_two = models.ImageField(upload_to='blog/', null=True, blank=True)
@@ -33,7 +33,7 @@ class Contact(models.Model):
         return self.first_name + '  ' + self.last_name + '  |  ' + self.email
 
 class All_Images(models.Model):
-    category = models.ForeignKey(Categorie, on_delete=models.CASCADE)
+    category = models.ForeignKey(Designs3D, on_delete=models.CASCADE)
     Image = models.ImageField(upload_to='display')
 
 
