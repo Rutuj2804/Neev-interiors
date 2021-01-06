@@ -280,7 +280,7 @@ margin-top:20px;
 }
 
 .about-me .about-content .img img{
-  width: 100%;
+  width: 300px;
   display: block;
   -webkit-transform: rotateY(180deg);
 
@@ -1932,7 +1932,6 @@ margin-top:20px;
 
 .about-me .about-content .text{
   flex:0 0 66.66%;
-  max-width: 66.66%;
   padding-left:30px;
 }
 
