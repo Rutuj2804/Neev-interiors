@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Designs3D(models.Model):
+class Categorie(models.Model):
     category_name = models.CharField(max_length=255)
     category_image = models.ImageField(upload_to='category')
     created_at = models.DateTimeField(auto_now_add=True)
@@ -11,7 +11,7 @@ class Designs3D(models.Model):
 
 class Blog(models.Model):
     title = models.CharField(max_length=600)
-    category = models.ForeignKey(Designs3D, on_delete=models.CASCADE)
+    category = models.ForeignKey(Categorie, on_delete=models.CASCADE)
     content = models.TextField()
     image_one = models.ImageField(upload_to='blog/', null=True, blank=True)
     image_two = models.ImageField(upload_to='blog/', null=True, blank=True)
@@ -32,20 +32,11 @@ class Contact(models.Model):
     def __str__(self):
         return self.first_name + '  ' + self.last_name + '  |  ' + self.email
 
-class All_Images(models.Model):
-    category = models.ForeignKey(Designs3D, on_delete=models.CASCADE)
+class Image(models.Model):
+    category = models.ForeignKey(Categorie, on_delete=models.CASCADE)
     Image = models.ImageField(upload_to='display')
 
 
-class Interior_Designing(models.Model):
-    title = models.CharField(max_length=255)
-    Image = models.ImageField(upload_to='display')
-
-
-class Flat_decor(models.Model):
-    title = models.CharField(max_length=255)
-    Image = models.ImageField(upload_to='display')
-
-class Vastu(models.Model):
+class Special(models.Model):
     title = models.CharField(max_length=255)
     Image = models.ImageField(upload_to='display')
