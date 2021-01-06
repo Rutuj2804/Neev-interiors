@@ -2086,6 +2086,7 @@ header{
     display: flex;
     position: relative;
     height: 100px;
+    background-color:#343a40;
 }
 
 .logo-container{
@@ -2145,7 +2146,7 @@ header{
 
 .nav-link > a{
     line-height: 3rem;
-    color: #000;
+    color: #fff;
     padding: 0 .5rem;
     letter-spacing: 1px;
     font-size: .95rem;
@@ -2249,6 +2250,7 @@ header{
   justify-content: center;
   align-items: center;
   flex: 1;
+  background-color:#343a40 ;
 }
 .log-sign a{
   color: #000;
@@ -2271,7 +2273,7 @@ header{
       top: 3rem;
       left: 0;
       width: 100%;
-      background-color: #ffffff;
+      background-color: #343a40;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
@@ -2308,7 +2310,7 @@ header{
   .nav-link > a{
       line-height: 1;
       padding: 1.6rem 2rem;
-      color:#000;
+      color:#ffffff;
       font: size 20px;
   }
 
