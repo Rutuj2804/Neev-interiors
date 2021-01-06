@@ -279,10 +279,6 @@ margin-top:20px;
   letter-spacing:2px;
 }
 
-.about-me .about-content .img{
-  flex:0 0 33.33%;
-  max-width: 33.33%;
-}
 .about-me .about-content .img img{
   width: 100%;
   display: block;
@@ -1930,10 +1926,6 @@ margin-top:20px;
   letter-spacing:2px;
 }
 
-.about-me .about-content .img{
-  flex:0 0 33.33%;
-  max-width: 33.33%;
-}
 .about-me .about-content .img img{
   width: 100%;
   display: block;
