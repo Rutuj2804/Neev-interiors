@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Categorie(models.Model):
+class Designs3D(models.Model):
     category_name = models.CharField(max_length=255)
     category_image = models.ImageField(upload_to='category')
     created_at = models.DateTimeField(auto_now_add=True)
@@ -32,11 +32,20 @@ class Contact(models.Model):
     def __str__(self):
         return self.first_name + '  ' + self.last_name + '  |  ' + self.email
 
-class Image(models.Model):
+class All_Images(models.Model):
     category = models.ForeignKey(Categorie, on_delete=models.CASCADE)
     Image = models.ImageField(upload_to='display')
 
 
-class Special(models.Model):
+class Interior_Designing(models.Model):
+    title = models.CharField(max_length=255)
+    Image = models.ImageField(upload_to='display')
+
+
+class Flat_decor(models.Model):
+    title = models.CharField(max_length=255)
+    Image = models.ImageField(upload_to='display')
+
+class Vastu(models.Model):
     title = models.CharField(max_length=255)
     Image = models.ImageField(upload_to='display')
