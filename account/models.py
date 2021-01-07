@@ -7,7 +7,6 @@ class Categorie(models.Model):
 class Designs3D(models.Model):
     category_name = models.CharField(max_length=255)
     category_image = models.ImageField(upload_to='category')
->>>>>>> b49266201a57404140876bdf782266f06847d32c
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
