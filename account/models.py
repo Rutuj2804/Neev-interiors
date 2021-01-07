@@ -2,8 +2,6 @@ from django.db import models
 
 
 class Categorie(models.Model):
-    category_name = models.CharField(max_length=255)
-    category_image = models.ImageField(upload_to='category')
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
