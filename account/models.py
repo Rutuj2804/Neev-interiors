@@ -1,9 +1,6 @@
 from django.db import models
 
 
-<<<<<<< HEAD
-class Categorie(models.Model):
-=======
 class Designs3D(models.Model):
     category_name = models.CharField(max_length=255)
     category_image = models.ImageField(upload_to='category')
