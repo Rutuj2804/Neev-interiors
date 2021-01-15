@@ -25,7 +25,15 @@ h1, h2, h3, h4, h5,
 
 .border-2 {
   border-width: 2px; }
-
+.fa-pinterest-p:before{
+  font-size: 22px;
+}
+.fa-facebook-p:before{
+  font-size: 22px;
+}
+.fa-instagram-p:before{
+  font-size: 22px;
+}
 .text-black {
   color: #000 !important; }
 
