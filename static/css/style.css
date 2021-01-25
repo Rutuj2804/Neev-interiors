@@ -422,7 +422,8 @@ h5,
 }
 
 .about-me .about-content .text {
-    padding-left: 30px
+    padding-left: 30px;
+    width: 50%;
 }
 
 .about-me .about-content .text h4 {
