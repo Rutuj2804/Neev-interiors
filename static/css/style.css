@@ -2094,18 +2094,18 @@ h5,
 
 .about-me .about-content .img img {
     display: block;
-    -webkit-transform: rotateY(0deg)
+    -webkit-transform: rotateY(0deg);
 }
 
 .about-me .about-content .text {
-    padding-left: 0
+    padding-left: 30px;
 }
 
 .about-me .about-content .text h4 {
     font-size: 25px;
     font-weight: 600;
     margin: 0 0 5px;
-    color: #000
+    color: #000;
 }
 
 .about-me .about-content .text h6 {
