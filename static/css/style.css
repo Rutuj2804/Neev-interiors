@@ -1912,9 +1912,12 @@ h5,
 }
 
 .social-media li {
-    display: inline-block
+    display: inline-block;
 }
 
+.social-media li a{
+    color: #fff;
+}
 .ft-feature-1 {
     margin-bottom: 80px
 }
