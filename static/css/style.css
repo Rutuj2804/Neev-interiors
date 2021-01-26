@@ -2079,7 +2079,7 @@ h5,
 }
 
 .about-me {
-    padding: 100px 15px;
+    padding: 10px 15px;
     background-color: #fff
 }
 
@@ -2102,6 +2102,7 @@ h5,
 
 .about-me .about-content .text {
     padding-left: 20px;
+    padding-top: 20px;
 }
 
 .about-me .about-content .text h4 {
